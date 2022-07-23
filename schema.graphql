@@ -1,0 +1,14 @@
+type Mutation {
+	sns(message: String!): String!
+	sqs(message: String!): String!
+	eventbus(message: String!): String!
+}
+
+type Query {
+	dummy: String
+}
+
+schema {
+	query: Query
+	mutation: Mutation
+}
